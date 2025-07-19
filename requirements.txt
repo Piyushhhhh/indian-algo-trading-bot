@@ -5,6 +5,7 @@ matplotlib
 requests
 fastapi
 uvicorn
+mangum
 # For broker API integration (install as needed):
 # kiteconnect
 # angel-one-smartapi

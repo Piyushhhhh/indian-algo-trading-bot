@@ -32,3 +32,7 @@ def run_backtest(
         "return_pct": return_pct,
         "trades": trade_log,
     }
+
+# AWS Lambda handler using Mangum
+from mangum import Mangum
+handler = Mangum(app)
