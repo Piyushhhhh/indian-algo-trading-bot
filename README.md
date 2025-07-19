@@ -1,24 +1,38 @@
 # Indian Algo Trading Bot
 
-This project is a best-in-class algorithmic trading bot designed for Indian stocks. The bot will fetch live and historical data, analyze it using advanced strategies, and execute trades via Indian broker APIs.
+A modular, extensible Python framework for algorithmic trading and backtesting on Indian equities.
 
-## Features (Planned)
-- Fetch historical and real-time data for Indian stocks
-- Plug-and-play trading strategies (momentum, mean reversion, ML-based, etc.)
-- Integration with broker APIs (e.g., Zerodha Kite, Angel One)
-- Backtesting and performance analytics
-- Robust error handling, logging, and reporting
+## Key Features
+- **Modular architecture:**
+  - `data/` — Data fetching utilities (e.g., Yahoo Finance)
+  - `strategies/` — Plug-and-play trading strategies
+  - `backtest/` — Vectorized, event-driven backtesting engine
+  - `utils/` — Visualization and helper tools
+- **Momentum strategy** with moving average crossovers (default)
+- **Configurable stop-loss and take-profit**
+- **Clear CLI for rapid experimentation**
 
-## Getting Started
-1. Install dependencies: `pip install -r requirements.txt`
-2. Configure your broker API credentials
-3. Run the starter bot: `python main.py`
+## Quick Start
+```bash
+pip install -r requirements.txt
+python main.py --symbol INFY --period 3mo --stop 0.02 --target 0.04
+```
 
-## Next Steps
-- Implement your first trading strategy in `strategies/`
-- Set up broker API integration in `broker/`
-- Add backtesting modules
+## Project Structure
+```
+indian-algo-trading-bot/
+├── main.py
+├── data/
+├── strategies/
+├── backtest/
+├── utils/
+└── requirements.txt
+```
+
+## Extend & Customize
+- Add new strategies in `strategies/`
+- Integrate broker APIs in `broker/` (future)
+- Write tests in `tests/`
 
 ---
-
-*This is a work in progress. Feel free to contribute or request features!*
+*Built for rapid research, robust analytics, and real-world trading.*
