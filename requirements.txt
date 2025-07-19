@@ -3,6 +3,8 @@ numpy
 yfinance
 matplotlib
 requests
+fastapi
+uvicorn
 # For broker API integration (install as needed):
 # kiteconnect
 # angel-one-smartapi
