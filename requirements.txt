@@ -1,6 +1,7 @@
 pandas
 numpy
 yfinance
+matplotlib
 requests
 # For broker API integration (install as needed):
 # kiteconnect
