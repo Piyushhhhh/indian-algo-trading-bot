@@ -1,7 +1,6 @@
 pandas
 numpy
 yfinance
-ta-lib
 requests
 # For broker API integration (install as needed):
 # kiteconnect
